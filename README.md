@@ -19,4 +19,4 @@ For bug reports, include:
 - Expected and actual behaviour
 - Screenshots, if helpful
 
-Do not include passwords, access tokens or private cloud links. For security-sensitive reports, contact **biesior@gmail.com**.
+Do not include passwords, access tokens or private cloud links. For security-sensitive reports, contact **biesior+nator@gmail.com**.
