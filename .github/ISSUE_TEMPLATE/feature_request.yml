@@ -1,0 +1,41 @@
+name: Feature request
+description: Suggest an improvement or a new feature.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us what you would like to achieve.
+        You do not need to propose a technical solution.
+
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like to achieve?
+      description: Describe the need or difficulty behind your suggestion.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggestion
+      description: How could BiesiorNator help?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround or alternatives
+      description: If applicable, explain how you handle this today.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Examples, screenshots, or links that help explain your idea.
+    validations:
+      required: false

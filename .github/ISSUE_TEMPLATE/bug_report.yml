@@ -1,0 +1,61 @@
+name: Bug report
+description: Report something that does not work as expected.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe what happened so we can investigate.
+        Do not include passwords, access tokens, or private library data.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the unexpected behaviour. You can paste screenshots here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open...
+        2. Click...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Application version
+      description: Check the version information in the footer.
+      placeholder: "For example: Web 2026.6.3, API 2026.6.3"
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Device and browser
+      placeholder: "For example: iPad, iPadOS 18, Safari"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Include any other details that may help us investigate.
+    validations:
+      required: false
