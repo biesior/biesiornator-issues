@@ -1,0 +1,76 @@
+name: Musical questions and clarifications
+description: Ask about chord symbols, voicings, or musical explanations.
+title: "[Music]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us make the musical content of BiesiorNator clearer and more accurate.
+        Share a question, uncertainty, or suggested clarification — you do not need to be an expert or know the solution.
+        Different musical conventions may lead to different interpretations.
+
+  - type: input
+    id: chord
+    attributes:
+      label: Chord symbol or musical topic
+      description: Enter the chord symbol as displayed in the application, or name the topic.
+      placeholder: "For example: D7sus4/A or suspended chords"
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link to the relevant view
+      description: If possible, paste a public link to the chord or view. Do not include private data.
+      placeholder: "https://..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: What does this concern?
+      multiple: true
+      options:
+        - Chord name or symbol
+        - Chord notes or intervals
+        - Voicing or diagram
+        - Fingering or barre
+        - Educational explanation
+        - Other musical question
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to clarify?
+      description: Describe your question or uncertainty. You can paste screenshots here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested clarification
+      description: Optional — it is fine to ask a question without proposing a solution.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Musical context
+      description: If relevant, include the tuning, notation convention, selected voicing, or musical context.
+      placeholder: "For example: standard guitar tuning, English note names, voicing x 0 0 0 1 0."
+    validations:
+      required: false
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: References or reasoning
+      description: Optional — share links, publications, or reasoning that may help us understand your question.
+    validations:
+      required: false
